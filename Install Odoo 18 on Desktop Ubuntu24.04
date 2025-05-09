@@ -9,7 +9,7 @@ Install Odoo 18 on Desktop (Ubuntu/Linux) 24.04
 
 2. Install PostgreSQL
   sudo apt install postgresql -y
-  sudo -u postgres createuser -s odoo
+  sudo -u postgres createuser -s $USER
 3. Install Python 3.10+ and pip packages
   sudo apt install python3.12 python3.12-venv python3.12-dev -y
   sudo apt install python3-pip -y
@@ -21,7 +21,7 @@ Install Odoo 18 on Desktop (Ubuntu/Linux) 24.04
   cd odoo18
   pip3 install -r requirements.txt
 7. Run Odoo
-  ./odoo-bin -d odoo18db -r odoo --addons-path=addons 
+  ./odoo-bin -d odoo18db -r $USER --addons-path=addons 
 
 You should now be able to access Odoo at: 
 http://localhost:8069

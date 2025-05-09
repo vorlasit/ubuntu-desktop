@@ -9,7 +9,7 @@ Install Odoo 18 on Desktop (Ubuntu/Linux) 24.04
 
 2. Install PostgreSQL
   sudo apt install postgresql -y
-  sudo -u postgres createuser -s odoo
+  sudo -u postgres createuser -s $USER
 3. Install Python 3.10+ and pip packages
   sudo apt install python3.12 python3.12-venv python3.12-dev -y
   sudo apt install python3-pip -y
